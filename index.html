@@ -5,20 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Lohith</title>
 <style>
-  /* ── Reset & Base ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --ink: #1a1a1a;
-    --muted: #555;
-    --pale: #999;
-    --link: #1155cc;
-    --rule: #eee;
-    --bg: #fff;
-    --max: 600px;
+    --ink: #1a1a1a; --muted: #555; --pale: #999; --link: #1155cc; 
+    --rule: #eee; --bg: #fff; --max: 600px;
   }
-
-  html { scroll-behavior: smooth; }
 
   body {
     font-family: 'Georgia', serif;
@@ -31,18 +23,10 @@
   a { color: var(--link); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
-  .main { flex: 1; }
-
-  .section {
-    display: none;
-    max-width: var(--max);
-    margin: 80px auto;
-    padding: 0 20px 80px;
-  }
+  .section { display: none; max-width: var(--max); margin: 80px auto; padding: 0 20px 80px; }
   .section.active { display: block; }
 
-  /* Image & Video Styling */
-  .photo-wrap { margin: 2rem 0; }
+  .photo-wrap, .video-wrap { margin: 2rem 0; }
   .photo-wrap img, .video-wrap video {
     width: 100%; 
     max-width: 420px; 
@@ -51,174 +35,148 @@
   }
   .caption { font-style: italic; font-size: 0.85rem; color: #888; margin-top: 0.5rem; }
 
-  /* Rest of your styles (same as before) */
-  #home h1 { font-size: 1.5rem; font-weight: normal; margin-bottom: 0.3rem; }
-  #home > p { margin: 0.5rem 0 1rem; color: #333; }
-  #home blockquote { margin: 2rem 0 0 2rem; font-style: italic; color: var(--muted); font-size: 0.95rem; }
-  #home .links { margin-top: 1.5rem; }
-  #home .links a { color: var(--link); font-size: 0.95rem; }
-  #home .links span { color: var(--pale); margin: 0 6px; }
-
-  #about h1, #love h1, #movies h1, #cricket h1, #krishna h1, #someday h1 { font-size: 1.5rem; font-weight: bold; margin-bottom: 1.5rem; }
-  #cricket .entry { margin: 3.5rem 0; }
-  #cricket .entry-label { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--pale); margin-bottom: 0.6rem; }
-  #cricket .entry h2 { font-size: 1.15rem; font-weight: bold; margin-bottom: 1rem; }
-  #cricket blockquote { margin: 1rem 0 1rem 1.5rem; font-style: italic; color: var(--muted); font-size: 0.95rem; border-left: 2px solid #ddd; padding-left: 1rem; }
-  #cricket blockquote cite { display: block; font-style: normal; font-size: 0.8rem; color: #aaa; margin-top: 0.4rem; }
-  #cricket .divider { border: none; border-top: 1px solid var(--rule); margin: 3rem 0; }
-  #cricket .project-link { font-size: 0.9rem; margin-top: 3rem; color: var(--muted); }
-
-  #krishna blockquote { margin: 0 0 0 1.5rem; font-style: italic; color: #333; font-size: 1.05rem; border-left: 2px solid #ddd; padding-left: 1.2rem; line-height: 1.9; }
-  #someday .sub { font-style: italic; color: #888; font-size: 0.95rem; margin-bottom: 2.5rem; }
-  #someday ul { list-style: none; padding: 0; margin: 0; }
-  #someday ul li { padding: 1rem 0; border-bottom: 1px solid var(--rule); color: #333; font-size: 1rem; }
-  #someday ul li:last-child { border-bottom: none; }
+  .entry { margin: 3.5rem 0; }
+  .entry-label { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--pale); margin-bottom: 0.6rem; }
+  .divider { border: none; border-top: 1px solid var(--rule); margin: 3rem 0; }
 
   .back-home { display: inline-block; margin-bottom: 2rem; font-size: 0.9rem; color: var(--link); cursor: pointer; }
-
-  @media (max-width: 720px) {
-    .section { margin: 60px auto; padding: 0 18px 60px; }
-  }
 </style>
 </head>
 <body>
 
-<div class="shell">
-  <main class="main">
+<main>
 
-    <!-- Home -->
-    <section class="section active" id="home">
-      <h1>M Lohith Krishna</h1>
-      <p>I mainly live in Kochi. From Hyderabad.</p>
-      <nav>
-        <a href="#" data-page="about">About</a>
-        <a href="#" data-page="love">Love</a>
-        <a href="#" data-page="movies">Movies</a>
-        <a href="#" data-page="cricket">Cricket</a>
-        <a href="#" data-page="krishna">Krishna</a>
-        <a href="#" data-page="someday">Someday</a>
-      </nav>
-      <div class="links">
-        <a href="mailto:lohith@email.com">Reach out to me</a>
-        <span>·</span>
-        <a href="https://github.com/M-LohithKrishna18" target="_blank">GitHub</a>
-      </div>
-      <blockquote>"Easygoing, endlessly curious, quietly happy."</blockquote>
-    </section>
+  <!-- ==================== HOME ==================== -->
+  <section class="section active" id="home">
+    <h1>M Lohith Krishna</h1>
+    <p>I mainly live in Kochi. From Hyderabad.</p>
+    <nav>
+      <a href="#" data-page="about">About</a>
+      <a href="#" data-page="love">Love</a>
+      <a href="#" data-page="movies">Movies</a>
+      <a href="#" data-page="cricket">Cricket</a>
+      <a href="#" data-page="krishna">Krishna</a>
+      <a href="#" data-page="someday">Someday</a>
+    </nav>
+    <div class="links" style="margin-top:1.5rem;">
+      <a href="mailto:lohith@email.com">Reach out to me</a>
+      <span>·</span>
+      <a href="https://github.com/M-LohithKrishna18" target="_blank">GitHub</a>
+    </div>
+  </section>
 
-    <!-- About -->
-    <section class="section" id="about">
-      <a href="#" class="back-home">← Back to Home</a>
-      <h1>Hey, I'm Lohith</h1>
-      <ul>
-        <li>19-year-old from Hyderabad, Telangana</li>
-        <li>Studying BMS at <a href="https://www.iimk.ac.in/" target="_blank">IIM Kozhikode</a>, 2nd semester</li>
-        <li>Grew up watching restaurants — my family ran one</li>
-        <li>Built and posted on GitHub: <a href="https://github.com/M-LohithKrishna18" target="_blank">Does the toss affect winning in cricket?</a></li>
-        <li>Analysed metro ridership data... <em>Ranked 1st of 10 teams</em></li>
-        <li>Working under <a href="https://ispp.org.in" target="_blank">Parth J. Shah</a></li>
-        <li>Victim of Narayana JEE coaching</li>
-      </ul>
-    </section>
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section" id="about">
+    <a href="#" class="back-home">← Back to Home</a>
+    <h1>Hey, I'm Lohith</h1>
+    <ul>
+      <li>19-year-old from Hyderabad, Telangana</li>
+      <li>Studying BMS at <a href="https://www.iimk.ac.in/" target="_blank">IIM Kozhikode</a>, 2nd semester</li>
+      <li>Grew up watching restaurants — my family ran one</li>
+      <li>Built and posted on GitHub: <a href="https://github.com/M-LohithKrishna18" target="_blank">Does the toss affect winning in cricket?</a></li>
+    </ul>
+  </section>
 
-    <!-- Love -->
-    <section class="section" id="love">
-      <a href="#" class="back-home">← Back to Home</a>
-      <h1>Love</h1>
-      <p>Before I could understand business, I understood a restaurant...</p>
-      <p>My family ran Social Monkey in Hyderabad...</p>
-      <p>I cook. Not as a hobby. More like a need.</p>
+  <!-- ==================== LOVE ==================== -->
+  <section class="section" id="love">
+    <a href="#" class="back-home">← Back to Home</a>
+    <h1>Love</h1>
+    <p>Before I could understand business, I understood a restaurant. The smell of a kitchen before service. The way a room fills up. What it feels like when something you made makes someone happy.</p>
+    <p>My family ran Social Monkey in Hyderabad. It didn't survive. But something about standing in that space as a kid — watching, absorbing, belonging to it — never really left.</p>
+    <p>I cook. Not as a hobby. More like a need.</p>
+    <div class="photo-wrap">
+      <img src="data:image/jpeg;base64,..." alt="My picture">
+      <p class="caption">Social Monkey, Hyderabad — 2017. I was ten.</p>
+    </div>
+  </section>
+
+  <!-- ==================== MOVIES ==================== -->
+  <section class="section" id="movies">
+    <a href="#" class="back-home">← Back to Home</a>
+    <h1>Movies</h1>
+    <p>How am I Telugu if I don't love movies.</p>
+    <p>130 films in theatres in the last 3 years. Not a flex — just context for how seriously I take this.</p>
+    <div class="video-wrap">
+      <video width="100%" controls>
+        <source src="data:video/mp4;base64,..." type="video/mp4">
+      </video>
+      <p class="caption">how am I Telugu if I don't love movies...</p>
+    </div>
+  </section>
+
+  <!-- ==================== CRICKET ==================== -->
+  <section class="section" id="cricket">
+    <a href="#" class="back-home">← Back to Home</a>
+    <h1>Cricket</h1>
+    <p>I am very emotionally committed to cricket. I've been watching it, analysing it, arguing about it for as long as I can remember. It's not a hobby — it's a language I think in.</p>
+    
+    <hr class="divider">
+    
+    <div class="entry">
+      <p class="entry-label">The Ice · Mumbai Indians</p>
+      <h2>The Conqueror</h2>
       <div class="photo-wrap">
-        <img src="lohith-restaurant-2017.jpg" alt="Social Monkey 2017"/>
-        <p class="caption">Social Monkey, Hyderabad — 2017. I was ten.</p>
+        <img src="data:image/jpeg;base64,..." alt="Rohit Sharma">
       </div>
-      <!-- Add your other food images here if needed -->
-    </section>
+      <blockquote>"Excellence is not a singular act, but a habit." <cite>— Aristotle</cite></blockquote>
+      <p>Mumbai Indians taught me the art of the conqueror. The calm executioner. Effortless elegance and the relentless habit of winning.</p>
+    </div>
 
-    <!-- Movies -->
-    <section class="section" id="movies">
-      <a href="#" class="back-home">← Back to Home</a>
-      <h1>Movies</h1>
-      <p>How am I Telugu if I don't love movies.</p>
-      <p>130 films in theatres in the last 3 years...</p>
-      <div class="video-wrap">
-        <video controls playsinline>
-          <source src="movies.mp4" type="video/mp4"/>
-        </video>
-        <p class="caption">how am I Telugu if I don't love movies...</p>
+    <hr class="divider">
+    
+    <div class="entry">
+      <p class="entry-label">The Fire · Royal Challengers Bengaluru</p>
+      <h2>The Passion</h2>
+      <div class="photo-wrap">
+        <img src="data:image/jpeg;base64,..." alt="Virat Kohli">
       </div>
-    </section>
+      <blockquote>"There is a stubbornness about me that never can bear to be frightened at the will of others. My courage always rises at every attempt to intimidate me." <cite>— Jane Austen</cite></blockquote>
+      <p>Royal Challengers Bengaluru taught me the art of passion. The heartbeat. Pure, unadulterated emotion.</p>
+    </div>
+  </section>
 
-    <!-- Cricket -->
-    <section class="section" id="cricket">
-      <a href="#" class="back-home">← Back to Home</a>
-      <h1>Cricket</h1>
-      <p>I am very emotionally committed to cricket...</p>
-      <hr class="divider"/>
-      
-      <div class="entry">
-        <p class="entry-label">The Ice · Mumbai Indians</p>
-        <h2>The Conqueror</h2>
-        <div class="photo-wrap">
-          <img src="/attachments/IMG_2365.jpg" alt="Rohit Sharma"/>
-          <p class="caption">Rohit Sharma — The calm executioner</p>
-        </div>
-        <blockquote>"Excellence is not a singular act, but a habit." <cite>— Aristotle</cite></blockquote>
-        <p>Mumbai Indians taught me the art of the conqueror...</p>
-      </div>
-      
-      <hr class="divider"/>
-      
-      <div class="entry">
-        <p class="entry-label">The Fire · Royal Challengers Bengaluru</p>
-        <h2>The Passion</h2>
-        <div class="photo-wrap">
-          <img src="/attachments/IMG_2364.jpg" alt="Virat Kohli"/>
-          <p class="caption">Virat Kohli — Pure passion and fire</p>
-        </div>
-        <blockquote>"There is a stubbornness about me..." <cite>— Jane Austen</cite></blockquote>
-        <p>Royal Challengers Bengaluru taught me the art of passion...</p>
-      </div>
-      
-      <hr class="divider"/>
-      <p class="project-link">I also built a data project: <a href="https://github.com/M-LohithKrishna18" target="_blank">Does the toss actually affect who wins?</a></p>
-    </section>
+  <!-- ==================== KRISHNA ==================== -->
+  <section class="section" id="krishna">
+    <a href="#" class="back-home">← Back to Home</a>
+    <h1>Krishna</h1>
+    <blockquote>"I searched the universe for the divine, only to sit quietly with a friend who taught me that I am the very love I was looking for."</blockquote>
+  </section>
 
-    <!-- Krishna & Someday sections remain the same -->
-    <section class="section" id="krishna">
-      <a href="#" class="back-home">← Back to Home</a>
-      <h1>Krishna</h1>
-      <blockquote>"I searched the universe for the divine..."</blockquote>
-    </section>
+  <!-- ==================== SOMEDAY ==================== -->
+  <section class="section" id="someday">
+    <a href="#" class="back-home">← Back to Home</a>
+    <h1>Someday</h1>
+    <p class="sub" style="font-style:italic; color:#888;">Not a plan. Just things I mean.</p>
+    <ul>
+      <li>Cook a meal for a hundred strangers and watch their faces when they take the first bite.</li>
+      <li>Play cricket at Lord's. Watch a match at Dharamshala with the mountains behind the boundary.</li>
+      <li>Stand inside my own restaurant and see every table full — and know the food did that.</li>
+      <li>Make my family proud of a food business. They've been afraid of it for long enough.</li>
+    </ul>
+  </section>
 
-    <section class="section" id="someday">
-      <a href="#" class="back-home">← Back to Home</a>
-      <h1>Someday</h1>
-      <p class="sub">Not a plan. Just things I mean.</p>
-      <ul>
-        <li>Cook a meal for a hundred strangers...</li>
-        <li>Play cricket at Lord's...</li>
-        <li>Stand inside my own restaurant...</li>
-        <li>Make my family proud of a food business...</li>
-      </ul>
-    </section>
-
-  </main>
-</div>
+</main>
 
 <script>
-  // Navigation Script
-  const pages = ['home','about','love','movies','cricket','krishna','someday'];
-  function showPage(id) {
-    pages.forEach(p => document.getElementById(p).classList.toggle('active', p === id));
-    window.scrollTo(0, 0);
-  }
-  document.querySelectorAll('[data-page]').forEach(a => {
-    a.addEventListener('click', e => { e.preventDefault(); showPage(a.dataset.page); });
+  // Navigation
+  document.querySelectorAll('[data-page]').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(link.dataset.page).classList.add('active');
+    });
   });
+
   document.querySelectorAll('.back-home').forEach(link => {
-    link.addEventListener('click', e => { e.preventDefault(); showPage('home'); });
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelectorAll('.section').forEach(section => section.classList.remove('active'));
+      document.getElementById('home').classList.add('active');
+    });
   });
 </script>
+
 </body>
 </html>
