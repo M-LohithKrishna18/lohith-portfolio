@@ -28,16 +28,9 @@
 
   .photo-wrap, .video-wrap { margin: 2rem 0; }
   .photo-wrap img, .video-wrap video {
-    width: 100%; 
-    max-width: 420px; 
-    display: block; 
-    border-radius: 6px;
+    width: 100%; max-width: 420px; display: block; border-radius: 6px;
   }
   .caption { font-style: italic; font-size: 0.85rem; color: #888; margin-top: 0.5rem; }
-
-  .entry { margin: 3.5rem 0; }
-  .entry-label { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--pale); margin-bottom: 0.6rem; }
-  .divider { border: none; border-top: 1px solid var(--rule); margin: 3rem 0; }
 
   .back-home { display: inline-block; margin-bottom: 2rem; font-size: 0.9rem; color: var(--link); cursor: pointer; }
 </style>
@@ -46,7 +39,7 @@
 
 <main>
 
-  <!-- ==================== HOME ==================== -->
+  <!-- Home -->
   <section class="section active" id="home">
     <h1>M Lohith Krishna</h1>
     <p>I mainly live in Kochi. From Hyderabad.</p>
@@ -58,14 +51,9 @@
       <a href="#" data-page="krishna">Krishna</a>
       <a href="#" data-page="someday">Someday</a>
     </nav>
-    <div class="links" style="margin-top:1.5rem;">
-      <a href="mailto:lohith@email.com">Reach out to me</a>
-      <span>·</span>
-      <a href="https://github.com/M-LohithKrishna18" target="_blank">GitHub</a>
-    </div>
   </section>
 
-  <!-- ==================== ABOUT ==================== -->
+  <!-- About -->
   <section class="section" id="about">
     <a href="#" class="back-home">← Back to Home</a>
     <h1>Hey, I'm Lohith</h1>
@@ -77,94 +65,56 @@
     </ul>
   </section>
 
-  <!-- ==================== LOVE ==================== -->
+  <!-- Love -->
   <section class="section" id="love">
     <a href="#" class="back-home">← Back to Home</a>
     <h1>Love</h1>
-    <p>Before I could understand business, I understood a restaurant. The smell of a kitchen before service. The way a room fills up. What it feels like when something you made makes someone happy.</p>
-    <p>My family ran Social Monkey in Hyderabad. It didn't survive. But something about standing in that space as a kid — watching, absorbing, belonging to it — never really left.</p>
-    <p>I cook. Not as a hobby. More like a need.</p>
     <div class="photo-wrap">
-      <img src="data:image/jpeg;base64,..." alt="My picture">
-      <p class="caption">Social Monkey, Hyderabad — 2017. I was ten.</p>
+      <img src="/attachments/lohith-restaurant-2017.jpg" alt="Social Monkey"/>
+      <p class="caption">Social Monkey, Hyderabad — 2017</p>
     </div>
   </section>
 
-  <!-- ==================== MOVIES ==================== -->
+  <!-- Movies -->
   <section class="section" id="movies">
     <a href="#" class="back-home">← Back to Home</a>
     <h1>Movies</h1>
-    <p>How am I Telugu if I don't love movies.</p>
-    <p>130 films in theatres in the last 3 years. Not a flex — just context for how seriously I take this.</p>
     <div class="video-wrap">
-      <video width="100%" controls>
-        <source src="data:video/mp4;base64,..." type="video/mp4">
+      <video controls playsinline>
+        <source src="/attachments/movies.mp4" type="video/mp4"/>
       </video>
-      <p class="caption">how am I Telugu if I don't love movies...</p>
     </div>
   </section>
 
-  <!-- ==================== CRICKET ==================== -->
+  <!-- Cricket -->
   <section class="section" id="cricket">
     <a href="#" class="back-home">← Back to Home</a>
     <h1>Cricket</h1>
-    <p>I am very emotionally committed to cricket. I've been watching it, analysing it, arguing about it for as long as I can remember. It's not a hobby — it's a language I think in.</p>
-    
-    <hr class="divider">
-    
+
     <div class="entry">
-      <p class="entry-label">The Ice · Mumbai Indians</p>
       <h2>The Conqueror</h2>
       <div class="photo-wrap">
-        <img src="data:image/jpeg;base64,..." alt="Rohit Sharma">
+        <img src="/attachments/IMG_2365.jpg" alt="Rohit Sharma"/>
+        <p class="caption">Rohit Sharma</p>
       </div>
-      <blockquote>"Excellence is not a singular act, but a habit." <cite>— Aristotle</cite></blockquote>
-      <p>Mumbai Indians taught me the art of the conqueror. The calm executioner. Effortless elegance and the relentless habit of winning.</p>
     </div>
 
-    <hr class="divider">
-    
     <div class="entry">
-      <p class="entry-label">The Fire · Royal Challengers Bengaluru</p>
       <h2>The Passion</h2>
       <div class="photo-wrap">
-        <img src="data:image/jpeg;base64,..." alt="Virat Kohli">
+        <img src="/attachments/IMG_2364.jpg" alt="Virat Kohli"/>
+        <p class="caption">Virat Kohli</p>
       </div>
-      <blockquote>"There is a stubbornness about me that never can bear to be frightened at the will of others. My courage always rises at every attempt to intimidate me." <cite>— Jane Austen</cite></blockquote>
-      <p>Royal Challengers Bengaluru taught me the art of passion. The heartbeat. Pure, unadulterated emotion.</p>
     </div>
-  </section>
-
-  <!-- ==================== KRISHNA ==================== -->
-  <section class="section" id="krishna">
-    <a href="#" class="back-home">← Back to Home</a>
-    <h1>Krishna</h1>
-    <blockquote>"I searched the universe for the divine, only to sit quietly with a friend who taught me that I am the very love I was looking for."</blockquote>
-  </section>
-
-  <!-- ==================== SOMEDAY ==================== -->
-  <section class="section" id="someday">
-    <a href="#" class="back-home">← Back to Home</a>
-    <h1>Someday</h1>
-    <p class="sub" style="font-style:italic; color:#888;">Not a plan. Just things I mean.</p>
-    <ul>
-      <li>Cook a meal for a hundred strangers and watch their faces when they take the first bite.</li>
-      <li>Play cricket at Lord's. Watch a match at Dharamshala with the mountains behind the boundary.</li>
-      <li>Stand inside my own restaurant and see every table full — and know the food did that.</li>
-      <li>Make my family proud of a food business. They've been afraid of it for long enough.</li>
-    </ul>
   </section>
 
 </main>
 
 <script>
-  // Navigation
   document.querySelectorAll('[data-page]').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
-      document.querySelectorAll('.section').forEach(section => {
-        section.classList.remove('active');
-      });
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
       document.getElementById(link.dataset.page).classList.add('active');
     });
   });
@@ -172,7 +122,7 @@
   document.querySelectorAll('.back-home').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
-      document.querySelectorAll('.section').forEach(section => section.classList.remove('active'));
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
       document.getElementById('home').classList.add('active');
     });
   });
